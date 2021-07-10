@@ -330,6 +330,12 @@ img {
   margin-bottom: 20px;
 }
 @media screen and (max-width: 700px) {
+  .showcase{
+    margin-top: 57px;
+  }
+  .under{
+    border: none;
+  }
   @keyframes scroll {
     0% {
       transform: translateX(0%);

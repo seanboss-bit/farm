@@ -6,7 +6,15 @@
   --grey-color: #454955;
   --dark-color: #0d0a0b;
 }
-
+.med {
+  color: yellow;
+}
+.up {
+  color: green;
+}
+.under {
+  border-bottom: 2px solid var(--light-color);
+}
 body {
   background-color: var(--light-color);
 }
@@ -26,7 +34,7 @@ img {
   z-index: 100;
 }
 .links a {
-  padding: 0 16px;
+  margin: 0 16px;
   color: var(--light-color);
   font-size: 18px;
   font-weight: 500;
@@ -40,13 +48,13 @@ img {
 }
 .carousel-caption h3 {
   margin-top: -550px !important;
-  color: var(--dark-color);
+  color: var(--primary-color);
   font-size: 3.5rem;
   font-weight: 700;
 }
 .carousel-caption p {
   font-size: 28px;
-  color: var(--dark-color);
+  color: var(--primary-color);
   font-weight: 700;
 }
 /* Info Section */
@@ -94,7 +102,7 @@ img {
   bottom: 10px;
   left: 10px;
   right: 10px;
-  background-color: var(--grey-color);
+  background-color: rgba(29, 129, 42, 0.5);
   transform: scaleY(0);
   transition: 0.5s;
 }
@@ -109,19 +117,25 @@ img {
   padding: 15px;
   color: var(--light-color);
 }
+.boxes h1 span {
+  border-bottom: 4px solid var(--primary-color);
+}
+.boxes h1 {
+  padding-bottom: 10px;
+}
 /* SLider */
 .supporters {
   margin: 0 !important;
   padding: 0 !important;
   position: fixed;
-  bottom: 0;
+  bottom: -10px;
   left: 0;
   right: 0;
 }
 .slider {
   background-color: #fff;
   width: 100%;
-  height: 80px;
+  height: 70px;
   overflow: hidden;
   position: relative;
   margin: auto;
@@ -147,18 +161,26 @@ img {
 .slider-track {
   display: flex;
   max-width: 1300px;
-  animation: scroll 40s linear infinite;
+  animation: scroll 10s linear infinite;
 }
-.slide img {
+.slide .slide-content {
   width: 250px;
+  padding: 10px;
   height: 100px;
+}
+.cool {
+  margin-left: 400px;
+}
+.slide-content span {
+  margin-left: 10px;
 }
 .slidertxt {
   background: var(--dark-color);
   color: var(--light-color);
   height: 79px;
   margin-top: 10px;
-  text-align: center;
+  padding: 10px;
+  text-align: right;
 }
 .solve {
   display: flex;
@@ -169,7 +191,7 @@ img {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-210px * 7));
   }
 }
 /* Table */
@@ -250,11 +272,98 @@ img {
 .bars:hover span:nth-child(2) {
   width: 100%;
 }
+/* Styliong For About Html */
+
+.abt-show {
+  background-image: url(../images/12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 90vh;
+}
+.abt-show h1 {
+  padding-top: 16rem;
+  text-align: center;
+  color: var(--light-color);
+  font-size: 4rem;
+}
+.abt-show p {
+  color: var(--light-color);
+  font-size: 2rem;
+}
+.history {
+  margin: 60px 0;
+  text-align: justify;
+}
+.history h2 {
+  margin-bottom: 40px;
+  padding-bottom: 12px;
+}
+
+/* Staff Section with Product Section*/
+.staff,
+.product {
+  margin: 30px 0;
+}
+.product {
+  margin: 60px 0 !important;
+  background-color: var(--primary-color);
+  padding: 30px 0;
+  color: var(--light-color);
+}
+.staff h3 span,
+.history h2 span {
+  margin-top: 3px;
+  border-bottom: 3px solid var(--primary-color);
+}
+.product h3 span {
+  border-bottom: 3px solid var(--light-color);
+}
+.staff-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+  gap: 30px;
+}
+.staff-innertxt h3,
+.product-innertxt h3 {
+  margin-bottom: 20px;
+}
 @media screen and (max-width: 700px) {
-  .table tbody tr td:nth-child(4), .table thead tr th:nth-child(4){
+  .slider::before,
+  .slider::after {
+    background: none;
+  }
+  .slide-content {
+    font-weight: 500;
+  }
+  /* ABout style */
+  .rem {
     display: none;
   }
-  .tabs{
+  .content p {
+    text-align: justify;
+  }
+  .abt-show h1 {
+    padding-top: 10rem;
+    font-size: 3rem;
+  }
+  .abt-show p {
+    font-size: 1.2rem;
+  }
+  .abt-show {
+    height: 60vh;
+  }
+  .product-innertxt p,
+  .staff-innertxt p {
+    text-align: justify;
+  }
+  /* HOme Style */
+  .table tbody tr td:nth-child(4),
+  .table thead tr th:nth-child(4) {
+    display: none;
+  }
+  .tabs {
     overflow: hidden;
   }
   .box-cont {
@@ -277,7 +386,8 @@ img {
     font-size: 12px;
   }
   .gris,
-  .grid {
+  .grid,
+  .staff-box {
     grid-template-columns: 1fr;
   }
   .links {

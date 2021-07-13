@@ -1,5 +1,5 @@
 .abt-show {
-  background-image: url(../images/Screenshot\ \(19\).png);
+  background-image: url(../images/pexels-mali-maeder-143133.jpg);
   position: relative;
 }
 .abt-show::before {
@@ -9,7 +9,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to top right, #000, #f1f1f1);
+  background-image: linear-gradient(to top, #000, #444);
   z-index: 0;
   opacity: 0.5;
 }

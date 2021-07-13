@@ -1,5 +1,5 @@
 .abt-show {
-  background-image: url(../images/pexels-jannis-knorr-5018414.jpg);
+  background-image: url(../images/Screenshot\ \(26\).png);
   position: relative;
 }
 .abt-show::before {
@@ -9,10 +9,9 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-image: linear-gradient(198deg, #72b01d, #f3eff5);
+  background: #3f7d20;
   z-index: 0;
   opacity: 0.5;
-  mix-blend-mode: color;
 }
 .abt-show > * {
   z-index: 10;

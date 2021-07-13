@@ -26,8 +26,8 @@ img {
   height: 100% !important;
 }
 .logo-area{
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 .nav {
   background-color: var(--secondary-color);
@@ -279,7 +279,7 @@ img {
 /* Styliong For About Html */
 
 .abt-show {
-  background-image: url(../images/12.jpg);
+  background-image: url(../images/12.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;

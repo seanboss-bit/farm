@@ -29,3 +29,14 @@
     z-index: 10;
     position: relative;
 }
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+}

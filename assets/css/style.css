@@ -438,7 +438,7 @@ img {
     position: fixed;
     top: 0;
     right: -100%;
-    padding: 80px 120px !important;
+    padding: 80px !important;
     z-index: 1001;
     transition: 0.3s linear;
   }
